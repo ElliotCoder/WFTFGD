@@ -1,0 +1,14 @@
+﻿<Window x:Class="WFTFGD.UI.MainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Google Drive Files Time Machine"
+        xmlns:this="clr-namespace:WFTFGD.UI.MainWindow.MVVM"
+        Loaded="MainWindow_Loaded"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False">
+    <Grid>
+        <this:View x:Name="view"/>
+    </Grid>
+</Window>

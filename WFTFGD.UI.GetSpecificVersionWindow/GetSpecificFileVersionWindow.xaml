@@ -1,0 +1,14 @@
+﻿<Window x:Class="WFTFGD.UI.GetSpecificVersionWindow.GetSpecificFileVersionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mvvm="clr-namespace:WFTFGD.UI.GetSpecificVersionWindow.MVVM"
+        Loaded="Window_Loaded"
+        Title="Select specific version"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize"
+        Height="500"
+        Width="320">
+    <Grid>
+        <mvvm:View x:Name="view"/>
+    </Grid>
+</Window>

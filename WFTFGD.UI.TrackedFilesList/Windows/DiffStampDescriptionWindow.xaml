@@ -1,0 +1,58 @@
+﻿<Window x:Class="WFTFGD.UI.TrackedFilesList.Windows.DiffStampDescriptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enter snapshot description"
+        UseLayoutRounding="True"
+        Icon="../Images/PanelBottom/panelDetails.png"
+        ResizeMode="NoResize"
+        Height="175" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="85"/>
+        </Grid.ColumnDefinitions>
+        <Image Width="64" Height="64"
+               Grid.Row="1"
+               Source="../Images/Miscellaneous/data_64_64.png" />
+        <TextBlock
+            VerticalAlignment="Center"
+            Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3"
+            TextWrapping="Wrap"
+            Margin="5">
+            When making a snapshot, it is important to not to forget
+            to leave a short and informative description (up to 65 characters)
+            for the case
+            of needance to roll back to specific version
+        </TextBlock>
+        
+        <TextBox Name="txtboxDescription"
+                 Grid.Row="2" Grid.ColumnSpan="4"
+                 MaxLength="65"
+                 FontFamily="Courier New"
+                 Margin="5"/>
+        <Button Name="btnMakeSnapshot"
+                Click="btnMakeSnapshot_Click"
+            Grid.Row="3" Grid.ColumnSpan="2"
+                Margin="5">
+            <StackPanel Orientation="Horizontal" Width="130">
+                <Image Source="../Images/PanelBottom/panelMakeSnapshot.png" Width="16" Height="16" Margin="0,0,8,0"/>
+                <TextBlock Text="Make Snapshot"/>
+            </StackPanel>
+        </Button>
+
+        <Button Name="btnCancel"
+                Click="btnCancel_Click"
+            Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2"
+                Margin="5">
+            Cancel
+        </Button>
+    </Grid>
+</Window>
