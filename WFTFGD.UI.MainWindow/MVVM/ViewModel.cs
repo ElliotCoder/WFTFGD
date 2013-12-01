@@ -212,7 +212,7 @@ namespace WFTFGD.UI.MainWindow.MVVM
             public void Execute(object parameter)
             {
                 _viewModel.Dispose();
-                Application.Current.Shutdown();
+                Environment.Exit(0);
             }
         }
 
